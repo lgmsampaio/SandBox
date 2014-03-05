@@ -1,73 +1,54 @@
-/* ============================================================================
-Name        : pointgrey.cpp
-Author      : Luiz Sampaio
-Version     : 0.1
-Copyright   : Public use
-Description : Functions to work with PointGrey Chameleon digital camera
-============================================================================ */
-
-#include "pointgrey.h"
+#include "Pointgrey.h"
 
 #include <FlyCapture2.h>
-#include <opencv2/opencv.hpp>
-
 #include <iostream>
 
 using namespace cv;
 using namespace FlyCapture2;
 using namespace std;
 
-Camera camera;
-Error camError;
-
-/// <summary>
-/// Starts the camera.
-/// </summary>
-/// <returns></returns>
-int startCamera()
+PointGrey::PointGrey(void)
 {
-	camError = camera.Connect(0);
-	if(camError != PGRERROR_OK)
-	{
+	error = camera.Connect(0);
+
+	if(error != PGRERROR_OK)
 		cout << "Failed to connect to camera" << endl;
-		return -1;
-	}
 
-	camError = camera.StartCapture();
-	if(camError == PGRERROR_ISOCH_BANDWIDTH_EXCEEDED)
-	{
+	error = camera.StartCapture();
+
+	if(error == PGRERROR_ISOCH_BANDWIDTH_EXCEEDED)
 		cout << "Bandwith exceeded" << endl;
-		return -1;
-	}
-	else if(camError != PGRERROR_OK)
-	{
+
+	else if(error != PGRERROR_OK)
 		cout << "Failed to start image capture" << endl;
-		return -1;
-	}
-
-	return 0;
 }
 
-/// <summary>
-/// Stops the camera.
-/// </summary>
-void stopCamera()
+PointGrey::~PointGrey(void)
 {
-	camError = camera.StopCapture();
-	camError = camera.Disconnect();
+	error = camera.StopCapture();
+	if(error != PGRERROR_OK)
+		cout << "Failed to stop camera capture" << endl;
+
+	error = camera.Disconnect();
+	if(error != PGRERROR_OK)
+		cout << "Failed to disconnect the camera" << endl;
+
+	cout << "capture finished" << endl;
 }
 
-/// <summary>
-/// Gets the point grey capture.
-/// </summary>
-/// <returns></returns>
-Mat getPointGreyCapture()
+bool PointGrey::isConnected()
+{
+	return camera.IsConnected();
+}
+
+Mat PointGrey::getNextImage()
 {
 	Mat frame, clone;
 	Image rawImage;
 
-	camError = camera.RetrieveBuffer(&rawImage);
-	//if(camError != PGRERROR_OK) throw exception("Capture error");
+	error = camera.RetrieveBuffer(&rawImage);
+	if(error != PGRERROR_OK) 
+		cout << "Failed to retrieve buffer" << endl;
 
 	//convert to RGB
 	Image rgbImage;

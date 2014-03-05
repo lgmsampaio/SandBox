@@ -1,10 +1,20 @@
-#include <opencv2/opencv.hpp>
+#include "ICamera.h"
+#include <FlyCapture2.h>
 
-using namespace cv;
+/// <summary>
+/// Header file for PointGrey Chameleon USB Camera
+/// </summary>
+class PointGrey: public ICamera
+{
+public:
+	PointGrey(void);
+	virtual ~PointGrey(void);
 
-int startCamera();
+	virtual bool isConnected();
+	virtual cv::Mat getNextImage();
 
-void stopCamera();
-
-Mat getPointGreyCapture();
+private:
+	FlyCapture2::Camera camera;
+	FlyCapture2::Error error;
+};
 

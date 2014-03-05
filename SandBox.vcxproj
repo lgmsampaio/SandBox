@@ -81,13 +81,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="calibration.cpp" />
+    <ClCompile Include="old_calibration.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="pointgrey.cpp" />
-    <ClCompile Include="webcam.cpp" />
+    <ClCompile Include="GenericCamera.cpp" />
+    <ClCompile Include="PointGrey.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pointgrey.h" />
-    <ClInclude Include="webcam.h" />
+    <ClInclude Include="calibration.h" />
+    <ClInclude Include="ICamera.h" />
+    <ClInclude Include="GenericCamera.h" />
+    <ClInclude Include="PointGrey.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

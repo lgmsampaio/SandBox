@@ -1,31 +1,19 @@
-/* ============================================================================
-Name        : main.cpp
-Author      : Luiz Sampaio
-Version     : 0.1
-Copyright   : Public use
-Description : Initial file
-============================================================================ */
+#include "GenericCamera.h"
+#include "PointGrey.h"
 
-#include "pointgrey.h"
-#include "webcam.h"
-
-#include <opencv2/opencv.hpp>
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
+#ifndef _CRT_SECURE_NO_WARNINGS
+# define _CRT_SECURE_NO_WARNINGS
+#endif
 
 using namespace cv;
 using namespace std;
-
-bool usePointGrey = true;
-bool useSecondScreen = false;
-
-Mat getImageFromCamera();
 
 int main(int argc, char** argv)
 {
 	const char ESC_KEY = 27;
 	char exitKey = 0;
 	char* windowName = "video test";
+	bool useSecondScreen = false;
 
 	int windowWidth = 1366;
 	int windowHeight = 768;
@@ -33,6 +21,10 @@ int main(int argc, char** argv)
 	int windowY = 0;
 	int result = 0;
 
+	GenericCamera cam = GenericCamera();
+	//PointGrey cam = PointGrey();
+	ICamera& camera = cam;
+	
 	Mat frame;
 
 	if(useSecondScreen)
@@ -45,28 +37,18 @@ int main(int argc, char** argv)
 	else
 		namedWindow(windowName, CV_WINDOW_AUTOSIZE);
 
-	if(usePointGrey) 
-		startCamera();
-	else
-		startWebCam();
-		
 	while(exitKey != ESC_KEY)
 	{
-		frame = getImageFromCamera();
+		frame = camera.getNextImage();
 		if (!frame.empty())	imshow(windowName, frame);
 
 		exitKey = (char)waitKey(30);
 	}
 
 	destroyWindow(windowName);
-
-	if(usePointGrey) stopCamera();
 	
 	return 0;
 }
 
-Mat getImageFromCamera()
-{
-	return usePointGrey ? getPointGreyCapture() : getWebCamCapture();
-}
+
 
