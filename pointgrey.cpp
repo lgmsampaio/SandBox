@@ -1,14 +1,26 @@
+/*---------------------------------------------------------------------------*\
+This program is free software. It comes without any warranty, to the extent 
+permitted by applicable law. You can redistribute it and/or modify it under 
+the terms of the Do What The Fuck You Want To Public License, Version 2, as 
+published by Sam Hocevar. See http://www.wtfpl.net/ for more details. 
+
+Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
+\*---------------------------------------------------------------------------*/
+
 #include "Pointgrey.h"
 
 #include <FlyCapture2.h>
 #include <iostream>
 
+using namespace std;
 using namespace cv;
 using namespace FlyCapture2;
-using namespace std;
 
+// Implementation of PointGrey class to connect Chameleon USB camera
 PointGrey::PointGrey(void)
 {
+	type = SourceType::CAM_CHAMELEON;
+
 	error = camera.Connect(0);
 
 	if(error != PGRERROR_OK)
@@ -50,15 +62,21 @@ Mat PointGrey::getNextImage()
 	if(error != PGRERROR_OK) 
 		cout << "Failed to retrieve buffer" << endl;
 
-	//convert to RGB
+	// Convert to RGB
 	Image rgbImage;
 	rawImage.Convert(PIXEL_FORMAT_BGR, &rgbImage);
 
-	//Convert to OpenCV Mat
-	unsigned int rowBytes = (double)rgbImage.GetReceivedDataSize()/(double)rgbImage.GetRows();
-	frame = Mat(rgbImage.GetRows(), rgbImage.GetCols(), CV_8UC3, rgbImage.GetData(), rowBytes);
+	// Convert to OpenCV Mat
+	// TODO: Try to solve the warning about possible loss of data when casting 
+	// from double to int
+	unsigned int rowBytes = (double) rgbImage.GetReceivedDataSize() 
+							/ (double)rgbImage.GetRows();
 
-	//if we don't make this clone, we lose the data to return to next method
+	frame = Mat(rgbImage.GetRows(), rgbImage.GetCols(), CV_8UC3, 
+		rgbImage.GetData(), rowBytes);
+
+	// If we don't make this clone, we lose the data to return to next method
+	// TODO: Try to investigate the real reason for this issue
 	clone = frame.clone();
 
 	return clone;

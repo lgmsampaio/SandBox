@@ -7,23 +7,24 @@ published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 \*---------------------------------------------------------------------------*/
 
-#ifndef GENERICCAMERA_H
-#define GENERICCAMERA_H
+#ifndef IMAGEGILES_H
+#define IMAGEGILES_H
 
 #include "IImageSource.h"
 
-// Header file manage builtin generic cameras using basic OpenCV function
-class GenericCamera : public IImageSource
+// Class to get image files stored in the disk
+class ImageFiles : public IImageSource
 {
 private:
-	VideoCapture cap;
+	vector<string> filelist;
+	int nrImages;
+	int currentImage;
 
 public:
-	GenericCamera(void) { GenericCamera(0, 0, 0); };
-	//Set horizontal and vertical resolution
-	GenericCamera(int frameW, int frameH, int deviceId);
-	
-	virtual ~GenericCamera(void);
+	ImageFiles(void) { ImageFiles(0); };
+	ImageFiles(int totalImages);
+
+	virtual ~ImageFiles(void);
 
 	virtual bool isConnected();
 	virtual Mat getNextImage();

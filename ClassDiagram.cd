@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Settings">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Settings::Pattern" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>old_calibration.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Settings::InputType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>old_calibration.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>hAAQAAAAEAAACJIDAKBgAAgAAIEUAhAQkwAAAAIAAAA=</HashCode>
+      <FileName>old_calibration.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calibration" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAAIAAAIAgIAgAAAABggAACwAAAAAACgA=</HashCode>
+      <FileName>Calibration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraCalibrator" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABBAAEBAYQCAAMDgAAAAEAAAAgAAAQARAAgQAAA=</HashCode>
+      <FileName>CameraCalibrator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IImageSource">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABwAAAAAABAAAAAAAAAACAAAA=</HashCode>
+      <FileName>IImageSource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenericCamera">
+    <Position X="5.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAhAAAAABQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenericCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImageFiles">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEBQABAAAIAAAAQAAQAAAAAAAA=</HashCode>
+      <FileName>ImageFiles.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointGrey">
+    <Position X="3" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAEBQAAAAAAAAAAAgAAAAAAAAQA=</HashCode>
+      <FileName>PointGrey.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="__unnamed_enum_0095_1">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQBAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>old_calibration.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
