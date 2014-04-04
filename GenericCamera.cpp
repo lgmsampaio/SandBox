@@ -13,9 +13,11 @@ using namespace std;
 using namespace cv;
 
 // Implementation of Generic Camera class, connecting usually builtin cameras
-GenericCamera::GenericCamera(int frameW, int frameH, int deviceId)
+GenericCamera::GenericCamera(int frameW, int frameH, int deviceId, 
+							 char* deviceName) 
 {
 	type = SourceType::CAM_GENERIC;
+	this->deviceName = deviceName;
 
 	// Will get the first camera available (if any)
 	//cap = VideoCapture(CV_CAP_ANY);

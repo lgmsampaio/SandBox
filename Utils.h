@@ -7,31 +7,20 @@ published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 \*---------------------------------------------------------------------------*/
 
-#ifndef POINTGREY_H
-#define POINTGREY_H
+#ifndef UTILS
+#define UTILS
 
-#include "IImageSource.h"
-
-#include <FlyCapture2.h>
+#include <opencv2/highgui/highgui.hpp>
 
 using namespace cv;
-using namespace FlyCapture2;
 
-// Header file manage PointGrey Chamemelon USB camera  
-class PointGrey: public IImageSource
-{
-
-public:
-	PointGrey(void); 
-	
-	virtual ~PointGrey(void);
-
-	virtual bool isConnected();
-	virtual Mat getNextImage();
-
-private:
-	Camera camera;
-	Error error;
-};
+void saveCameraParams(char* cameraName, 
+					  Size& imageSize, 
+					  Mat& cameraMatrix, 
+					  Mat& distCoeffs, 
+					  const vector<Mat>& rvecs,
+					  const vector<Mat>& tvecs, 
+					  const vector<vector<Point2f>>& imagePoints, 
+					  Size& boardSize);
 
 #endif

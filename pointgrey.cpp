@@ -20,6 +20,7 @@ using namespace FlyCapture2;
 PointGrey::PointGrey(void)
 {
 	type = SourceType::CAM_CHAMELEON;
+	deviceName = "Point Grey Chameleon USB";
 
 	error = camera.Connect(0);
 

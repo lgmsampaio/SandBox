@@ -19,9 +19,9 @@ private:
 	VideoCapture cap;
 
 public:
-	GenericCamera(void) { GenericCamera(0, 0, 0); };
+	GenericCamera(void) { GenericCamera(0, 0, 0, ""); };
 	//Set horizontal and vertical resolution
-	GenericCamera(int frameW, int frameH, int deviceId);
+	GenericCamera(int frameW, int frameH, int deviceId, char* deviceName);
 	
 	virtual ~GenericCamera(void);
 

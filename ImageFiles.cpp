@@ -19,6 +19,7 @@ ImageFiles::ImageFiles(int totalImages)
 	: nrImages(totalImages), currentImage(0)
 {
 	type = SourceType::IMAGE_FILE;
+	deviceName = "Images from disk";
 	
 	// Load all images into a vector
 	for (int i = 0; i < nrImages; i++) 
@@ -46,10 +47,10 @@ bool ImageFiles::isConnected()
 // working. Here we have a limit of loaded images
 Mat ImageFiles::getNextImage()
 {
-	if(currentImage < nrImages)
+	if(currentImage < (nrImages - 1))
 		return imread(filelist[++currentImage]);
 
-	return Mat();
+	return imread(filelist[currentImage]);
 }
 
 

@@ -81,7 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CameraCalibrator.cpp" />
-    <ClCompile Include="CameraUtils.cpp" />
+    <ClCompile Include="Utils.cpp" />
     <ClCompile Include="ImageFiles.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GenericCamera.cpp" />
@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CameraCalibrator.h" />
-    <ClInclude Include="CameraUtils.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="IImageSource.h" />
     <ClInclude Include="GenericCamera.h" />
     <ClInclude Include="ImageFiles.h" />

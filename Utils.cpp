@@ -1,14 +1,30 @@
-#include "CameraUtils.h"
+/*---------------------------------------------------------------------------*\
+This program is free software. It comes without any warranty, to the extent 
+permitted by applicable law. You can redistribute it and/or modify it under 
+the terms of the Do What The Fuck You Want To Public License, Version 2, as 
+published by Sam Hocevar. See http://www.wtfpl.net/ for more details. 
+
+Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
+\*---------------------------------------------------------------------------*/
+
+#include <iostream>
+
 #include <time.h>
+
+#include "Utils.h"
 
 using namespace std;
 
 void saveCameraParams(char* cameraName, Size& imageSize, Mat& cameraMatrix, Mat& distCoeffs, const vector<Mat>& rvecs, const vector<Mat>& tvecs, const vector<vector<Point2f>>& imagePoints, Size& boardSize)
 {
-	//char* name = strcat(cameraName, ".xml");
-	//printf(name);
-	
-	FileStorage fs("teste.xml", FileStorage::WRITE );
+	// Building the file name
+	char result[100];				// array to hold the result.
+	strcpy_s(result, cameraName);	// copy string one into the result.
+	strcat_s(result, ".xml");
+
+	cout << result << endl;
+
+	FileStorage fs(result, FileStorage::WRITE);
 
 	time_t tm;
 	time(&tm);

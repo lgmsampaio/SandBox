@@ -15,7 +15,7 @@ Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 #include "GenericCamera.h"
 #include "PointGrey.h"
 #include "ImageFiles.h"
-#include "CameraUtils.h"
+#include "Utils.h"
 
 using namespace cv;
 
@@ -37,7 +37,7 @@ int CameraCalibrator::startCalibration() {
 	Mat resultImage = remap();
 
 	// 4. Save the camera parameters in a xml file
-	saveCameraParams("image files", resultImage.size(), cameraMatrix, distCoeffs, rvecs, tvecs, imagePoints, boardSize);
+	saveCameraParams(imageSource->deviceName, resultImage.size(), cameraMatrix, distCoeffs, rvecs, tvecs, imagePoints, boardSize);
 
 	waitKey();
 	return 0;
@@ -64,16 +64,25 @@ int CameraCalibrator::addChessboardPoints(Size& boardSize) {
 		}
 	}
 
+	long int counter = 0;
 	while(success < nrFrames) 
 	{
+		cout << counter++ << endl;
+
 		image = imageSource->getNextImage();
 		image.copyTo(sample);
-
+				
 		cvtColor(image, grayImage, COLOR_BGR2GRAY);
 
-		// Get the chessboard corners
-		bool found = findChessboardCorners(grayImage, boardSize, imageCorners);
+		// if we don't call the "waitKey", the imshow doesn't work
+		int key = waitKey(1);
 
+		// Get the chessboard corners. Possible filters to use
+		//CV_CALIB_CB_ADAPTIVE_THRESH
+		//CV_CALIB_CB_NORMALIZE_IMAGE
+		//CV_CALIB_CB_FILTER_QUADS
+		bool found = findChessboardCorners(grayImage, boardSize, imageCorners,  CV_CALIB_CB_FAST_CHECK);
+		
 		if(found){
 			// Get subpixel accuracy on the corners
 			cornerSubPix(grayImage, imageCorners, Size(5,5), Size(-1,-1), 
@@ -82,10 +91,8 @@ int CameraCalibrator::addChessboardPoints(Size& boardSize) {
 				0.1 //0.1: min accuracy
 				));     
 
-			cv::drawChessboardCorners(sample, boardSize, imageCorners, found);
-
-			int key = waitKey(1);
-
+			drawChessboardCorners(sample, boardSize, imageCorners, found);
+			
 			// if the image source are files in the disk, just add the points
 			// otherwise, wait for the user's command
 			// TODO: The following "if" looks stupid. I believe must have a 
@@ -100,8 +107,8 @@ int CameraCalibrator::addChessboardPoints(Size& boardSize) {
 				success++;
 			}
 		} // if(found)
-
-		cv::imshow("Corners on Chessboard", sample);
+		
+		imshow("Corners on Chessboard", sample);
 	}
 
 	return success;

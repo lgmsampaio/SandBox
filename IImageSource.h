@@ -36,6 +36,8 @@ public:
 	virtual Mat getNextImage() = 0;
 
 	SourceType type;
+
+	char* deviceName;
 };
 
 #endif
