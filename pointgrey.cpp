@@ -7,6 +7,7 @@ published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 \*---------------------------------------------------------------------------*/
 
+/*
 #include "Pointgrey.h"
 
 #include <FlyCapture2.h>
@@ -82,3 +83,5 @@ Mat PointGrey::getNextImage()
 
 	return clone;
 }
+
+*/

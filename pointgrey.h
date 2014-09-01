@@ -7,6 +7,7 @@ published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 \*---------------------------------------------------------------------------*/
 
+/*
 #ifndef POINTGREY_H
 #define POINTGREY_H
 
@@ -35,3 +36,5 @@ private:
 };
 
 #endif
+
+*/

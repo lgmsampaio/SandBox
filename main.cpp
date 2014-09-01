@@ -9,7 +9,7 @@ Copyright © 2014 Luiz Gustavo M. Sampaio www.lgmsampaio.com
 
 #include "CameraCalibrator.h"
 #include "GenericCamera.h"
-#include "PointGrey.h"
+//#include "PointGrey.h"
 #include "ImageFiles.h"
 
 int main()

@@ -67,7 +67,7 @@ int CameraCalibrator::addChessboardPoints(Size& boardSize) {
 	long int counter = 0;
 	while(success < nrFrames) 
 	{
-		cout << counter++ << endl;
+		//cout << counter++ << endl;
 
 		image = imageSource->getNextImage();
 		image.copyTo(sample);
