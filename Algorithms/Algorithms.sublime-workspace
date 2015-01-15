@@ -1,0 +1,382 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"dog"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"res",
+				"responsive"
+			],
+			[
+				"news",
+				"news_ja_id"
+			],
+			[
+				"input",
+				"input_year"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"latex",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"latextools",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"LaTexTools",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/LuizGustavo/Projects/cpp/Algorithms"
+	],
+	"file_history":
+	[
+		"/C/Users/LuizGustavo/Projects/cpp/of_v0.8.1_vs_release/projectGenerator/data/settings/projectGeneratorSettings.xml",
+		"/C/Users/LuizGustavo/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/LuizGustavo/Desktop/untitled-1.log",
+		"/C/Users/LuizGustavo/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/C/Users/LuizGustavo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/templates/imdpub.template",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2008/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2008/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2009/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2009/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2010/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2010/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2011/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2011/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2012/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2012/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2013/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2013/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2014/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/news/2014/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/templates/imdpeople_contents.template",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/awards/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/awards/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/infrastructure/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/access/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/contact/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/templates/imdpeople.template",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/templates/imdperson_contents.template",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/vr2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/vr.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/prospective.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/pr2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/pr.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ngi2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ngi.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ir2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ir.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/index2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/index.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/cg2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/cg.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/xmld2.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/xmld.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/xmld2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/assets/css/layoutstruct.css",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/cg_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/cg2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ir_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ir2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ngi_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/ngi2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/pr_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/pr2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/prospective_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/vr_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/vr2_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/research/xmld_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/menu_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/assets/css/demo-style.css",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/access/index_e.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/contact/index_e.html",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/LuizGustavo/Projects/web/publications/meng_ismar13/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/yamamoto_icdvrat14/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/eck_ismar14b/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/meng_ismar13/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/sandor_ismar04/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/sandor_ieeevr10/citation.bib",
+		"/C/Users/LuizGustavo/Projects/imdwebapp/templates/imdpub.template",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab/infrastructure/index_e.html",
+		"/C/Users/LuizGustavo/Projects/imdwebapp/templates/publications_by_type.template",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/makesite.py",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/templates/publications.template",
+		"/C/Users/LuizGustavo/Projects/imd_publications/sandor_euiml01/citation.bib",
+		"/C/Users/LuizGustavo/Projects/imd_publications/sandor_euiml01/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/single-portfolio.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/admin/functions/functions.options.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/meta-box/demo/force-delete.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/meta-box/meta-box.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/post-types/register-post-types.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/post-types/post-type-helpers.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/post-types/register-taxonomies.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/post-types/tax-filters.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/function-extras.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/functions/meta-box/demo/map.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/template-portfolio.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/full-width-page.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/admin/front-end/options.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/admin/functions/functions.php",
+		"/C/Users/LuizGustavo/Projects/web/parser.php",
+		"/C/Users/LuizGustavo/Projects/web/news1.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/template-team.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/template-news.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/includes/home-portfolio.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/footer.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/includes/home-clients.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/includes/home-image.php",
+		"/C/Users/LuizGustavo/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/J64LHGMZ/abstract_ryo-mi_ja.txt",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/style.css",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/includes/home-pagecontent.php",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/js/main.js",
+		"/C/Users/LuizGustavo/Projects/web/info.php",
+		"/C/Users/LuizGustavo/Projects/web/parser.html",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-content/themes/spotwp/css/magnific.css",
+		"/C/Users/LuizGustavo/Desktop/SpotWP-Package/SpotWP-Package/pricingtables.txt",
+		"/C/Users/LuizGustavo/Projects/web/imd-lab2/wp-config-sample.php",
+		"/C/Users/LuizGustavo/Projects/web/publications/okada_kjmr13/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/taketa_himi07/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/fujisawa_vmr09/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/fujisawa_vmr09/citiation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/hatano_inex07/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/hatano_inex07/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/okada_kjmr13/metadata.txt",
+		"/C/Users/LuizGustavo/Projects/web/publications/okamoto_siggraph09/citiation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/kanbara_jvrc09/citiation.bib",
+		"/C/Users/LuizGustavo/Projects/web/imdwebapp/imdlab/models.py",
+		"/C/Users/LuizGustavo/Projects/web/publications/amano_icpr10/citations.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/oku_icuimc09/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/Oku_idb09/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/myojin_eminds07/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/Keyaki_icadiwt09/citation.bib",
+		"/C/Users/LuizGustavo/Projects/web/publications/tamura_ismar09/citation.bib"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\Users\\LuizGustavo\\Projects\\web\\imd-lab\\research",
+			"C:\\Users\\LuizGustavo\\Projects\\web\\publications",
+			"C:\\Users\\LuizGustavo\\Projects\\web\\imd-lab2\\wp-content\\themes\\spotwp",
+			"C:\\Users\\LuizGustavo\\Projects\\web\\publications",
+			"C:\\Users\\LuizGustavo\\Projects\\imd_publications"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"citation",
+			"style",
+			"bibliography",
+			"...",
+			"citation",
+			"author",
+			";\n",
+			"traditional",
+			"	*  	*",
+			"\n",
+			"?>        ",
+			"<?php include 'menu.html' ?>",
+			";}",
+			"     <div class=\"NavHolder\" id=\"navHolderDIV\">\n              <ul>\n                <li><a href=\"../index_e.html\" id=\"main\" >Main</a></li>\n                <li><a href=\"index_e.html\" id=\"home\" class=\"active\">Home</a></li>\n                 <li><a href=\"http://imd.naist.jp/imdweb/imdpub.html\" id=\"about\"  >about</a></li>\n                 <li><a href=\"../infrastructure/index_e.html\" id=\"product\"  >product</a></li>\n                 <li><a href=\"../people/index_e.html\" id=\"health\"  >health</a></li>\n                 <li><a href=\"http://imd.naist.jp/blog_e/\" id=\"recipe\" >recipe</a></li>\n                 <li><a href=\"../access/index_e.html\" id=\"market\" >marketing</a></li>\n                <li><a href=\"../contact/index_e.html\" id=\"contact\" >contact</a></li>\n                </ul>\n        </div>",
+			"needToInit",
+			"points[0]",
+			"award",
+			">-->\n",
+			"translation ",
+			"href",
+			"Test Meta Box",
+			"hp_modal",
+			"enclosure",
+			"modal",
+			"custom",
+			"wtf_hp_modal",
+			"();\n",
+			"h4",
+			"cg",
+			"models",
+			"missing",
+			"mvl",
+			"bibtex",
+			"title",
+			"FINAL_DST_IMAGE",
+			"size",
+			"March",
+			"type",
+			"send",
+			"player",
+			"doi",
+			"internal",
+			"achievements/index.html",
+			"achi",
+			"vc",
+			"getCameraMatrix",
+			"svn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<?php include '../menu_e.html' ?>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 341.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Algorithms.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
